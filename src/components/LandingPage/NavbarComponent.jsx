@@ -1,14 +1,17 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
+import { Container, Navbar, Nav, Button } from "react-bootstrap";
 import reactLogo from "../../assets/react.svg";
-import Button from "react-bootstrap/Button";
 
 export default function NavbarComponent() {
 	return (
 		<>
-			<Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+			<Navbar
+				collapseOnSelect
+				expand="lg"
+				bg="white"
+				variant="light"
+				className="mt-lg-5"
+			>
 				<Container>
 					<Navbar.Brand href="#home">
 						<img
