@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./App.css";
 import HowSection from "./components/HowSection";
 import Landing from "./components/LandingPage/Landing";
+import Whypage from "./components/Whypage";
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -11,6 +12,7 @@ function App() {
 		<div className="App">
 			<Landing />
 			<HowSection />
+			<Whypage />
 		</div>
 	);
 }

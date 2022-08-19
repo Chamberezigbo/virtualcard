@@ -27,7 +27,7 @@ export default function LandingSection() {
 										</p>
 									</div>
 								</Col>
-								<Col lg={6}>
+								<Col lg={6} className="pt-5">
 									<Image src={landingImage} fluid />
 								</Col>
 							</Row>
@@ -35,8 +35,8 @@ export default function LandingSection() {
 					</Container>
 				</Carousel.Item>
 				<Carousel.Item>
-					<Container className="mt-3">
-						<div className="px-5">
+					<Container className="mt-3 mb-5">
+						<div className="px-lg-5">
 							<Row>
 								<Col lg={6} className="pt-5">
 									<h1 className="lh-1">

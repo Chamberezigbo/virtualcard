@@ -4,7 +4,7 @@ import sideimage from "../assets/howsection.png";
 
 export default function HowSection() {
 	return (
-		<div className="pt-5 bg-whiteMoke">
+		<div className="pt-5 pb-5 bg-whiteMoke">
 			<Container>
 				<Row>
 					<Col lg={6}>

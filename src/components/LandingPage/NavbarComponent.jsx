@@ -1,8 +1,13 @@
-import React from "react";
+import { useState } from "react";
 import { Container, Navbar, Nav, Button } from "react-bootstrap";
 import reactLogo from "../../assets/react.svg";
+import NavbarModal from "./NavbarModal";
 
 export default function NavbarComponent() {
+	const [show, setShow] = useState(false);
+
+	const handleClose = () => setShow(false);
+	const handleShow = () => setShow(true);
 	return (
 		<>
 			<Navbar
@@ -11,6 +16,7 @@ export default function NavbarComponent() {
 				bg="white"
 				variant="light"
 				className="mt-lg-5"
+				sticky="top"
 			>
 				<Container>
 					<Navbar.Brand href="#home">
@@ -42,13 +48,15 @@ export default function NavbarComponent() {
 								variant="primary"
 								size="sm"
 								className="mt-2 mt-md-0 ms-lg-2"
+								onClick={handleShow}
 							>
-								Create a Card
+								Create a account
 							</Button>
 						</Nav>
 					</Navbar.Collapse>
 				</Container>
 			</Navbar>
+			<NavbarModal show={show} onHandleClose={handleClose} />
 		</>
 	);
 }
