@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./App.css";
 import HowSection from "./components/HowSection";
 import Landing from "./components/LandingPage/Landing";
-import Whypage from "./components/Whypage";
+import Whypage from "./components/WhyPage";
 
 function App() {
 	const [count, setCount] = useState(0);

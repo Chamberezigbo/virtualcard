@@ -1,21 +1,22 @@
 import { Modal, Button } from "react-bootstrap";
+import SignUp from "./SignUp";
 
 export default function NavbarModal({ show, onHandleClose }) {
 	return (
 		<>
 			<Modal show={show} onHide={onHandleClose}>
 				<Modal.Header closeButton>
-					<Modal.Title>Modal heading</Modal.Title>
+					<Modal.Title className="ms-auto">Sign up form</Modal.Title>
 				</Modal.Header>
 				<Modal.Body>
-					Woohoo, you're reading this text in a modal!
+					<SignUp />
 				</Modal.Body>
 				<Modal.Footer>
 					<Button variant="secondary" onClick={onHandleClose}>
 						Close
 					</Button>
 					<Button variant="primary" onClick={onHandleClose}>
-						Save Changes
+						Sign Up
 					</Button>
 				</Modal.Footer>
 			</Modal>

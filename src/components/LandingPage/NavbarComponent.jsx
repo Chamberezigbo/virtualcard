@@ -39,14 +39,14 @@ export default function NavbarComponent() {
 						<Nav className="">
 							<Button
 								variant="outline-secondary"
-								size="sm"
+								size="md"
 								className=""
 							>
 								Login
 							</Button>
 							<Button
 								variant="primary"
-								size="sm"
+								size="md"
 								className="mt-2 mt-md-0 ms-lg-2"
 								onClick={handleShow}
 							>
