@@ -2,12 +2,17 @@ import { useState } from "react";
 import { Container, Navbar, Nav, Button } from "react-bootstrap";
 import reactLogo from "../../assets/react.svg";
 import NavbarModal from "./NavbarModal";
+import NavbarModalForLogin from "./NavbarModalForLogin";
 
 export default function NavbarComponent() {
 	const [show, setShow] = useState(false);
+	const [showLogin, setShowForLogin] = useState(false);
 
 	const handleClose = () => setShow(false);
 	const handleShow = () => setShow(true);
+
+	const handleCloseForLogin = () => setShowForLogin(false);
+	const handleShowForLogin = () => setShowForLogin(true);
 	return (
 		<>
 			<Navbar
@@ -40,7 +45,8 @@ export default function NavbarComponent() {
 							<Button
 								variant="outline-secondary"
 								size="md"
-								className=""
+								className="mb-md-2 mb-lg-0"
+								onClick={handleShowForLogin}
 							>
 								Login
 							</Button>
@@ -57,6 +63,10 @@ export default function NavbarComponent() {
 				</Container>
 			</Navbar>
 			<NavbarModal show={show} onHandleClose={handleClose} />
+			<NavbarModalForLogin
+				show={showLogin}
+				onHandleClose={handleCloseForLogin}
+			/>
 		</>
 	);
 }

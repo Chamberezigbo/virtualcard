@@ -11,14 +11,7 @@ export default function NavbarModal({ show, onHandleClose }) {
 				<Modal.Body>
 					<SignUp />
 				</Modal.Body>
-				<Modal.Footer>
-					<Button variant="secondary" onClick={onHandleClose}>
-						Close
-					</Button>
-					<Button variant="primary" onClick={onHandleClose}>
-						Sign Up
-					</Button>
-				</Modal.Footer>
+				<Modal.Footer>{/* need to add something here */}</Modal.Footer>
 			</Modal>
 		</>
 	);
